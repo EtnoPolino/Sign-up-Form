@@ -1,5 +1,23 @@
-# Color
+# Sign-up Form
 
-Button create Account : 596D48
+ODIN || Sign-up Form
 
-input default light borders : E5E7EB
+## Table of contents
+- [Overview](#overview)
+  - [Links](#links)
+  - [Built with](#built-with)
+
+## Overview
+
+Sign-up Form from ODIN PROJECT, implementing a sign-up form/
+
+### Links
+
+- Solution URL : [code](https://github.com/EtnoPolino/Sign-up-Form.git)
+- Live Site URL : [demo](https://etnopolino.github.io/Sign-up-Form/)
+
+### Built with
+
+- HTML 
+- CSS
+- Javascript vanilla
