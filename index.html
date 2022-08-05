@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Sign up</title>
+</head>
+<body>
+    <main class="container">
+        <section class="left">
+           <div>
+                <img src="images/odin_logo.png" alt="odin logo">
+                <span>ODIN</span>
+            </div>    
+        </section> 
+        
+        <section class="right">
+            <div>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize deepest dreams.</p>
+                <p>Sign up <span>now</span> to get started.</p>
+                <p>You <span>know</span> you want to.</p>
+            </div>
+
+            <form action="" method="post">
+                <div>
+                    <h3>Let's do this!</h3>
+
+                    <div class="middle">
+                            <div class="formclass">
+                                <div>
+                                    <label for="first_name">First Name</label>
+                                    <input type="text" name="first_name" id="fname" required>
+                                </div>
+
+                                <div>
+                                    <label for="last_name">Last Name</label>
+                                    <input type="text" name="last_name" id="lname" required>
+                                </div>
+                            </div>
+                            
+                            <div class="formclass">
+                                <div>                                                    
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" pattern="^([a-z0-9A-Z_\.\-]{1,})@([a-z0-9\.\-]+)\.([a-z]{2,3})$" required>
+                                </div>
+
+                                <div>
+                                 <label for="tel">Phone Number</label>
+                                    <input type="tel" name="tel" id="tel" maxlength="10" pattern="[0-9]{10}" required>
+                                </div>
+                            </div>
+                            
+                            <div class="formclass bottom">
+                                <div>
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" pattern="[a-z0-9A-Z_]{6,}" required>
+                                    <div class="error">
+                                        * Passwords does not match
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="password">Confirm password</label>
+                                    <input type="password" name="password" id="password_confirm" pattern="[a-z0-9A-Z_]{6,}" required>
+                                </div>
+                            </div>   
+                        </div>
+                </div>
+
+                <button type="submit">Create Account</button>
+
+                <p>Already have an account ? <a href="www.google.fr">Log in</a></p>
+
+            </form>
+
+
+        </section>
+    </main>
+</body>
+</html>
+

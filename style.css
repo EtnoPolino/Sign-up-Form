@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@font-face {
+    font-family: "norse";
+    src: url("../fonts/Norse-Bold.otf");
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+main > section{
+    border: 1px solid black;
+}
+
+main > section:first-child{
+    background-image: url(images/background_plant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex: 1;   
+}
+
+main > section:first-child > div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgb(0,0,0,0.4);
+    height: 150px;     
+    top: 20%;
+}
+
+main > section:first-child > div > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main > section:first-child > div > span{
+    font-family: 'Norse';
+    font-size: 3em;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+main > section:nth-child(2){
+    flex: 2;
+    background-color: #f9fafb;
+}
+
+main > section:nth-child(2) > div{
+    padding: 100px 340px 50px 50px;
+}
+
+main > section:nth-child(2) > div > p{
+    font-size: 1.6em;
+    font-weight: 650;
+}
+
+main > section:nth-child(2) > div > p:first-child,
+main > section:nth-child(2) > div > p:last-child{
+    margin-top: 20px;
+}
+
+main > section:nth-child(2) > div > p > span{
+    font-style: italic;
+}
+
+main > section:nth-child(2) > form > div{
+    padding: 4px 0px 5px 50px;
+    background-color: white;
+    box-shadow : 5px 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+main > section:nth-child(2) > form > div > h3{
+    margin: 15px 0 15px 0;
+}
+
+main > section:nth-child(2) > form > div > .middle > .formclass{
+    margin-bottom: 20px;
+}
+
+.formclass{
+    display: flex;
+    gap: 70px;
+}
+
+.formclass > div > *{
+    display: block;
+}
+
+.formclass > div > label{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.formclass > div > input{
+    padding: 5px;
+    width: 240px;
+    border-radius: 5px;
+    border-color: #E5E7EB;
+}
+
+.bottom{
+    margin-bottom: 30px;
+}
+
+.formclass > div > input:focus{
+    border-color: blue;
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.15);  
+    outline: none;
+}
+
+.formclass > div > input:valid{
+    border-color: lightgreen;
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.15);  
+    outline: none;
+}
+
+div.error{
+    font-size: 0.7em;
+    color: red;
+    display: none;
+}
+
+button{
+    margin: 30px 0px 20px 50px;
+    padding: 15px 60px 15px 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    font-size: 1em;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+button + p{
+    margin: 20px 0px 0px 50px;
+}
+
+button + p > a{
+    color: #596D48;
+    font-weight: 550;
+    text-decoration: none;
+}

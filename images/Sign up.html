@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="Sign%20up_fichiers/script.js" defer="defer"></script>
+    <title>Sign up</title>
+<link rel="stylesheet" href="Sign%20up_fichiers/style.css"></head>
+<body>
+    <main class="container">
+        <section class="left">
+           <div>
+                <img src="Sign%20up_fichiers/odin_logo.png" alt="odin logo">
+                <span>ODIN</span>
+            </div>    
+        </section> 
+        
+        <section class="right">
+            <div>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize deepest dreams.</p>
+                <p>Sign up <span>now</span> to get started.</p>
+                <p>You <span>know</span> you want to.</p>
+            </div>
+
+            <form action="/." method="post">
+                <h3>Let's do this!</h3>
+
+                <div>
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="fname">
+                </div>
+
+                <div>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="lname">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <div class="error">
+                        Passwords de not match
+                    </div>
+                </div>
+
+                <div>
+                    <label for="password">Confirm password</label>
+                    <input type="password" name="password" id="password_confirm">
+                </div>
+
+                <button type="submit">Create Account</button>
+
+                <p>Already have an account ? <a href="http://127.0.0.1:5500/www.google.fr">Log in</a></p>
+            </form>
+
+
+        </section>
+    </main>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
